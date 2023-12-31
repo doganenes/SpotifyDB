@@ -4,24 +4,41 @@ using System.Linq.Expressions;
 
 namespace spotifyDB
 {
-    public partial class User : Form
+    public partial class Form1 : Form
     {
-        public User()
+        public Form1()
         {
             InitializeComponent();
         }
         private string connString = "Server=localhost; Port=5432; Username=postgres; Password=1234; Database=spotify;";
         private NpgsqlConnection conn;
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void addBtn_Click(object sender, EventArgs e)
         {
             string username = userName.Text;
             string pass = password.Text;
             string usermail = email.Text;
-            DateTime date = DateTime.Now;
-
-
+            DateTime date = dateTimePicker1.Value;
 
             string insert = "INSERT INTO tbluser (username, password, email, creationdate) VALUES" +
                             " (@username, @pass, @usermail, @date)";
@@ -38,7 +55,6 @@ namespace spotifyDB
 
             MessageBox.Show("User data inserted successfully!");
         }
-
         private void connectBtn_Click(object sender, EventArgs e)
         {
             try
@@ -67,15 +83,15 @@ namespace spotifyDB
         private void disconnectBtn_Click(object sender, EventArgs e)
         {
             try
-            {   
+            {
                 if (conn != null && conn.State == ConnectionState.Open)
                 {
                     conn.Close();
-                    MessageBox.Show("Disconnected");
+                     MessageBox.Show("Disconnected");
                 }
                 else
                 {
-                    MessageBox.Show("Connection is already closed.");
+                     MessageBox.Show("Connection is already closed.");
                 }
             }
             catch (Exception ex)
@@ -106,39 +122,6 @@ namespace spotifyDB
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPlayList_Click(object sender, EventArgs e)
-        {
-            playlist playlist = new playlist();
-            this.Hide();
-            playlist.Show();
-        }
-
-        private void User_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void queryBtn_Click(object sender, EventArgs e)
-        {
-            QueryForm q = new QueryForm();
-            this.Hide();
-            q.Show();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
