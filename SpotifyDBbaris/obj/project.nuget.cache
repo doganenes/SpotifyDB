@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "L2nfmCM7lkdksmEGhDUblPgGvLTTDqUZy/IyY0lO8oRmWHnV63sWL8No0BwL+HDykqTKgv5OVWkfCycdyOSGOg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pc\\Desktop\\.net\\SpotifyDBbaris\\spotifyDB.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\npgsql\\8.0.1\\npgsql.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
