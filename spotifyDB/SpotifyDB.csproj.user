@@ -19,6 +19,9 @@
     <Compile Update="FormPremiumMembership.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormSearchHistory.cs">
       <SubType>Form</SubType>
     </Compile>

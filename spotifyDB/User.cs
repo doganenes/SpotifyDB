@@ -113,7 +113,7 @@ namespace spotifyDB
 
         private void btnPlayList_Click(object sender, EventArgs e)
         {
-            playlist playlist = new playlist();
+            FormPlaylist playlist = new FormPlaylist();
             this.Hide();
             playlist.Show();
         }
@@ -125,7 +125,7 @@ namespace spotifyDB
 
         private void queryBtn_Click(object sender, EventArgs e)
         {
-            QueryForm q = new QueryForm();
+            FormQuery q = new FormQuery();
             this.Hide();
             q.Show();
         }
