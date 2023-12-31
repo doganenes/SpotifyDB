@@ -1,0 +1,52 @@
+C:\Users\pc\Desktop\.net\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.exe
+C:\Users\pc\Desktop\.net\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.deps.json
+C:\Users\pc\Desktop\.net\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.runtimeconfig.json
+C:\Users\pc\Desktop\.net\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.dll
+C:\Users\pc\Desktop\.net\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.pdb
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.AssemblyInfo.cs
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.dll
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\refint\spotifyDB.dll
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.pdb
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.genruntimeconfig.cache
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\ref\spotifyDB.dll
+C:\Users\pc\Desktop\.net\spotifyDB\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\pc\Desktop\.net\spotifyDB\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\pc\Desktop\.net\spotifyDB\bin\Debug\net7.0-windows\Npgsql.dll
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.Form1.resources
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\.net\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.csproj.CopyComplete
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.exe
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.deps.json
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.runtimeconfig.json
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.dll
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\bin\Debug\net7.0-windows\spotifyDB.pdb
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\bin\Debug\net7.0-windows\Npgsql.dll
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.csproj.AssemblyReference.cache
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.Form1.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.csproj.GenerateResource.cache
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.AssemblyInfoInputs.cache
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.AssemblyInfo.cs
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.csproj.CoreCompileInputs.cache
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.sourcelink.json
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.csproj.CopyComplete
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.dll
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\refint\spotifyDB.dll
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.pdb
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.genruntimeconfig.cache
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\ref\spotifyDB.dll
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormDevices.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormComment.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormFavouriteSong.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormFollowedUser.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormPlaylist.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormPremiumMembership.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormSearchHistory.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormSessionHistory.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormSong.resources

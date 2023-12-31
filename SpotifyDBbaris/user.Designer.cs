@@ -28,163 +28,263 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.addBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.userName = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.connectBtn = new System.Windows.Forms.Button();
-            this.disconnectBtn = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btnPlayList = new System.Windows.Forms.Button();
-            this.queryBtn = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            addBtn = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            userName = new TextBox();
+            email = new TextBox();
+            password = new TextBox();
+            connectBtn = new Button();
+            disconnectBtn = new Button();
+            linkLabel1 = new LinkLabel();
+            btnPlayList = new Button();
+            queryBtn = new Button();
+            label4 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            SuspendLayout();
             // 
             // addBtn
             // 
-            this.addBtn.FlatAppearance.BorderSize = 15;
-            this.addBtn.Location = new System.Drawing.Point(109, 496);
-            this.addBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(511, 112);
-            this.addBtn.TabIndex = 0;
-            this.addBtn.Text = "Add Data";
-            this.addBtn.UseVisualStyleBackColor = true;
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            addBtn.FlatAppearance.BorderSize = 15;
+            addBtn.Location = new Point(146, 322);
+            addBtn.Margin = new Padding(4);
+            addBtn.Name = "addBtn";
+            addBtn.Size = new Size(187, 38);
+            addBtn.TabIndex = 0;
+            addBtn.Text = "Add Data";
+            addBtn.UseVisualStyleBackColor = true;
+            addBtn.Click += addBtn_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(216, 170);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "User Name";
+            label1.AutoSize = true;
+            label1.Location = new Point(9, 199);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(116, 28);
+            label1.TabIndex = 1;
+            label1.Text = "User Name";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(216, 289);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Password";
+            label2.AutoSize = true;
+            label2.Location = new Point(20, 244);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(101, 28);
+            label2.TabIndex = 2;
+            label2.Text = "Password";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(216, 403);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 21);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "User Email";
+            label3.AutoSize = true;
+            label3.Location = new Point(9, 286);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(112, 28);
+            label3.TabIndex = 3;
+            label3.Text = "User Email";
             // 
             // userName
             // 
-            this.userName.Location = new System.Drawing.Point(366, 162);
-            this.userName.Margin = new System.Windows.Forms.Padding(4);
-            this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(147, 29);
-            this.userName.TabIndex = 5;
-            this.userName.TextChanged += new System.EventHandler(this.userName_TextChanged);
+            userName.Location = new Point(146, 193);
+            userName.Margin = new Padding(4);
+            userName.Name = "userName";
+            userName.Size = new Size(187, 34);
+            userName.TabIndex = 5;
+            userName.TextChanged += userName_TextChanged;
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(366, 395);
-            this.email.Margin = new System.Windows.Forms.Padding(4);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(147, 29);
-            this.email.TabIndex = 6;
-            this.email.TextChanged += new System.EventHandler(this.email_TextChanged);
+            email.Location = new Point(146, 280);
+            email.Margin = new Padding(4);
+            email.Name = "email";
+            email.Size = new Size(187, 34);
+            email.TabIndex = 6;
+            email.TextChanged += email_TextChanged;
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(366, 281);
-            this.password.Margin = new System.Windows.Forms.Padding(4);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(147, 29);
-            this.password.TabIndex = 7;
-            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
+            password.Location = new Point(146, 238);
+            password.Margin = new Padding(4);
+            password.Name = "password";
+            password.Size = new Size(187, 34);
+            password.TabIndex = 7;
+            password.TextChanged += password_TextChanged;
             // 
             // connectBtn
             // 
-            this.connectBtn.Location = new System.Drawing.Point(191, 41);
-            this.connectBtn.Name = "connectBtn";
-            this.connectBtn.Size = new System.Drawing.Size(116, 75);
-            this.connectBtn.TabIndex = 10;
-            this.connectBtn.Text = "Connect";
-            this.connectBtn.UseVisualStyleBackColor = true;
-            this.connectBtn.Click += new System.EventHandler(this.connectBtn_Click);
+            connectBtn.Location = new Point(631, 12);
+            connectBtn.Name = "connectBtn";
+            connectBtn.Size = new Size(101, 48);
+            connectBtn.TabIndex = 10;
+            connectBtn.Text = "Connect";
+            connectBtn.UseVisualStyleBackColor = true;
+            connectBtn.Click += connectBtn_Click;
             // 
             // disconnectBtn
             // 
-            this.disconnectBtn.Location = new System.Drawing.Point(433, 47);
-            this.disconnectBtn.Name = "disconnectBtn";
-            this.disconnectBtn.Size = new System.Drawing.Size(123, 69);
-            this.disconnectBtn.TabIndex = 11;
-            this.disconnectBtn.Text = "Disconnect";
-            this.disconnectBtn.UseVisualStyleBackColor = true;
-            this.disconnectBtn.Click += new System.EventHandler(this.disconnectBtn_Click);
+            disconnectBtn.Location = new Point(738, 12);
+            disconnectBtn.Name = "disconnectBtn";
+            disconnectBtn.Size = new Size(151, 48);
+            disconnectBtn.TabIndex = 11;
+            disconnectBtn.Text = "Disconnect";
+            disconnectBtn.UseVisualStyleBackColor = true;
+            disconnectBtn.Click += disconnectBtn_Click;
             // 
             // linkLabel1
             // 
-            this.linkLabel1.Location = new System.Drawing.Point(0, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(100, 23);
-            this.linkLabel1.TabIndex = 0;
+            linkLabel1.Location = new Point(0, 0);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(100, 23);
+            linkLabel1.TabIndex = 0;
             // 
             // btnPlayList
             // 
-            this.btnPlayList.Location = new System.Drawing.Point(55, 135);
-            this.btnPlayList.Name = "btnPlayList";
-            this.btnPlayList.Size = new System.Drawing.Size(100, 44);
-            this.btnPlayList.TabIndex = 12;
-            this.btnPlayList.Text = "PlayList";
-            this.btnPlayList.UseVisualStyleBackColor = true;
-            this.btnPlayList.Click += new System.EventHandler(this.btnPlayList_Click);
+            btnPlayList.Location = new Point(632, 92);
+            btnPlayList.Name = "btnPlayList";
+            btnPlayList.Size = new Size(257, 44);
+            btnPlayList.TabIndex = 12;
+            btnPlayList.Text = "PlayList";
+            btnPlayList.UseVisualStyleBackColor = true;
+            btnPlayList.Click += btnPlayList_Click;
             // 
             // queryBtn
             // 
-            this.queryBtn.Location = new System.Drawing.Point(59, 214);
-            this.queryBtn.Name = "queryBtn";
-            this.queryBtn.Size = new System.Drawing.Size(96, 36);
-            this.queryBtn.TabIndex = 13;
-            this.queryBtn.Text = "Query";
-            this.queryBtn.UseVisualStyleBackColor = true;
-            this.queryBtn.Click += new System.EventHandler(this.queryBtn_Click);
+            queryBtn.Location = new Point(146, 367);
+            queryBtn.Name = "queryBtn";
+            queryBtn.Size = new Size(187, 38);
+            queryBtn.TabIndex = 13;
+            queryBtn.Text = "Query";
+            queryBtn.UseVisualStyleBackColor = true;
+            queryBtn.Click += queryBtn_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(12, 23);
+            label4.Name = "label4";
+            label4.Size = new Size(171, 41);
+            label4.TabIndex = 14;
+            label4.Text = "Spotify DB";
+            label4.Click += label4_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(632, 142);
+            button1.Name = "button1";
+            button1.Size = new Size(257, 44);
+            button1.TabIndex = 15;
+            button1.Text = "Comment";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(632, 193);
+            button2.Name = "button2";
+            button2.Size = new Size(257, 44);
+            button2.TabIndex = 16;
+            button2.Text = "Devices";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(632, 243);
+            button3.Name = "button3";
+            button3.Size = new Size(257, 44);
+            button3.TabIndex = 17;
+            button3.Text = "Favourite Song";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(631, 293);
+            button4.Name = "button4";
+            button4.Size = new Size(257, 44);
+            button4.TabIndex = 18;
+            button4.Text = "Followed User";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(631, 343);
+            button5.Name = "button5";
+            button5.Size = new Size(257, 44);
+            button5.TabIndex = 19;
+            button5.Text = "Premium Membership";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(632, 393);
+            button6.Name = "button6";
+            button6.Size = new Size(257, 44);
+            button6.TabIndex = 20;
+            button6.Text = "Search History";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(632, 443);
+            button7.Name = "button7";
+            button7.Size = new Size(257, 44);
+            button7.TabIndex = 21;
+            button7.Text = "Song";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(632, 493);
+            button8.Name = "button8";
+            button8.Size = new Size(257, 44);
+            button8.TabIndex = 22;
+            button8.Text = "Session History";
+            button8.UseVisualStyleBackColor = true;
             // 
             // User
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(731, 668);
-            this.Controls.Add(this.queryBtn);
-            this.Controls.Add(this.btnPlayList);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.disconnectBtn);
-            this.Controls.Add(this.connectBtn);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.userName);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.addBtn);
-            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "User";
-            this.Text = "UserForm";
-            this.Load += new System.EventHandler(this.User_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(12F, 28F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(30, 216, 96);
+            ClientSize = new Size(901, 592);
+            Controls.Add(button8);
+            Controls.Add(button7);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label4);
+            Controls.Add(queryBtn);
+            Controls.Add(btnPlayList);
+            Controls.Add(linkLabel1);
+            Controls.Add(disconnectBtn);
+            Controls.Add(connectBtn);
+            Controls.Add(password);
+            Controls.Add(email);
+            Controls.Add(userName);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(addBtn);
+            Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Margin = new Padding(4);
+            Name = "User";
+            Load += User_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -201,5 +301,14 @@
         private LinkLabel linkLabel1;
         private Button btnPlayList;
         private Button queryBtn;
+        private Label label4;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Button button6;
+        private Button button7;
+        private Button button8;
     }
 }
