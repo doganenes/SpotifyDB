@@ -28,153 +28,161 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.addBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.userName = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.connectBtn = new System.Windows.Forms.Button();
-            this.disconnectBtn = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            addBtn = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            userName = new TextBox();
+            email = new TextBox();
+            password = new TextBox();
+            dateTimePicker1 = new DateTimePicker();
+            connectBtn = new Button();
+            disconnectBtn = new Button();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            SuspendLayout();
             // 
             // addBtn
             // 
-            this.addBtn.Location = new System.Drawing.Point(260, 504);
-            this.addBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(219, 112);
-            this.addBtn.TabIndex = 0;
-            this.addBtn.Text = "Add Data";
-            this.addBtn.UseVisualStyleBackColor = true;
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            addBtn.BackColor = Color.Lime;
+            addBtn.Location = new Point(200, 329);
+            addBtn.Margin = new Padding(4);
+            addBtn.Name = "addBtn";
+            addBtn.Size = new Size(303, 54);
+            addBtn.TabIndex = 0;
+            addBtn.Text = "Add Data";
+            addBtn.UseVisualStyleBackColor = false;
+            addBtn.Click += addBtn_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 45);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "User Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Location = new Point(67, 81);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(106, 28);
+            label1.TabIndex = 1;
+            label1.Text = "Username";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 147);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            label2.AutoSize = true;
+            label2.Location = new Point(74, 142);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(101, 28);
+            label2.TabIndex = 2;
+            label2.Text = "Password";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 265);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 21);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "email";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            label3.AutoSize = true;
+            label3.Location = new Point(113, 208);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(64, 28);
+            label3.TabIndex = 3;
+            label3.Text = "email";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 375);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 21);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Create Date";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            label4.AutoSize = true;
+            label4.Location = new Point(43, 271);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(143, 28);
+            label4.TabIndex = 4;
+            label4.Text = "Creation Date";
+            label4.Click += label4_Click;
             // 
             // userName
             // 
-            this.userName.Location = new System.Drawing.Point(202, 34);
-            this.userName.Margin = new System.Windows.Forms.Padding(4);
-            this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(147, 29);
-            this.userName.TabIndex = 5;
-            this.userName.TextChanged += new System.EventHandler(this.userName_TextChanged);
+            userName.Location = new Point(202, 75);
+            userName.Margin = new Padding(4);
+            userName.Name = "userName";
+            userName.Size = new Size(147, 34);
+            userName.TabIndex = 5;
+            userName.TextChanged += userName_TextChanged;
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(202, 254);
-            this.email.Margin = new System.Windows.Forms.Padding(4);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(147, 29);
-            this.email.TabIndex = 6;
-            this.email.TextChanged += new System.EventHandler(this.email_TextChanged);
+            email.Location = new Point(202, 203);
+            email.Margin = new Padding(4);
+            email.Name = "email";
+            email.Size = new Size(147, 34);
+            email.TabIndex = 6;
+            email.TextChanged += email_TextChanged;
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(202, 143);
-            this.password.Margin = new System.Windows.Forms.Padding(4);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(147, 29);
-            this.password.TabIndex = 7;
-            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
+            password.Location = new Point(202, 137);
+            password.Margin = new Padding(4);
+            password.Name = "password";
+            password.Size = new Size(147, 34);
+            password.TabIndex = 7;
+            password.TextChanged += password_TextChanged;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(202, 367);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(290, 29);
-            this.dateTimePicker1.TabIndex = 9;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            dateTimePicker1.Location = new Point(205, 269);
+            dateTimePicker1.Margin = new Padding(4);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(290, 34);
+            dateTimePicker1.TabIndex = 9;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // connectBtn
             // 
-            this.connectBtn.Location = new System.Drawing.Point(412, 64);
-            this.connectBtn.Name = "connectBtn";
-            this.connectBtn.Size = new System.Drawing.Size(106, 56);
-            this.connectBtn.TabIndex = 10;
-            this.connectBtn.Text = "Connect";
-            this.connectBtn.UseVisualStyleBackColor = true;
-            this.connectBtn.Click += new System.EventHandler(this.connectBtn_Click);
+            connectBtn.Location = new Point(488, 20);
+            connectBtn.Name = "connectBtn";
+            connectBtn.Size = new Size(106, 56);
+            connectBtn.TabIndex = 10;
+            connectBtn.Text = "Connect";
+            connectBtn.UseVisualStyleBackColor = true;
+            connectBtn.Click += connectBtn_Click;
             // 
             // disconnectBtn
             // 
-            this.disconnectBtn.Location = new System.Drawing.Point(569, 64);
-            this.disconnectBtn.Name = "disconnectBtn";
-            this.disconnectBtn.Size = new System.Drawing.Size(103, 56);
-            this.disconnectBtn.TabIndex = 11;
-            this.disconnectBtn.Text = "Disconnect";
-            this.disconnectBtn.UseVisualStyleBackColor = true;
-            this.disconnectBtn.Click += new System.EventHandler(this.disconnectBtn_Click);
+            disconnectBtn.Location = new Point(604, 19);
+            disconnectBtn.Name = "disconnectBtn";
+            disconnectBtn.Size = new Size(141, 56);
+            disconnectBtn.TabIndex = 11;
+            disconnectBtn.Text = "Disconnect";
+            disconnectBtn.UseVisualStyleBackColor = true;
+            disconnectBtn.Click += disconnectBtn_Click;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 668);
-            this.Controls.Add(this.disconnectBtn);
-            this.Controls.Add(this.connectBtn);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.userName);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.addBtn);
-            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
-            this.Text = "UserForm";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(12F, 28F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(767, 498);
+            Controls.Add(disconnectBtn);
+            Controls.Add(connectBtn);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(password);
+            Controls.Add(email);
+            Controls.Add(userName);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(addBtn);
+            Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Margin = new Padding(4);
+            Name = "Form1";
+            Text = "UserForm";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -190,5 +198,6 @@
         private DateTimePicker dateTimePicker1;
         private Button connectBtn;
         private Button disconnectBtn;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }

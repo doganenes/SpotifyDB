@@ -10,7 +10,7 @@ namespace spotifyDB
         {
             InitializeComponent();
         }
-        private string connString = "Server=localhost; Port=5432; Username=postgres; Password=mitaka; Database=spotify;";
+        private string connString = "Server=localhost; Port=5432; Username=postgres; Password=1234; Database=spotify;";
         private NpgsqlConnection conn;
 
         private void label2_Click(object sender, EventArgs e)
@@ -67,11 +67,11 @@ namespace spotifyDB
                 if (conn.State != ConnectionState.Open)
                 {
                     conn.Open();
-                    // MessageBox.Show("Connected");
+                    MessageBox.Show("Connected");
                 }
                 else
                 {
-                    // MessageBox.Show("Connection is already open.");
+                    MessageBox.Show("Connection is already open.");
                 }
             }
             catch (Exception ex)
@@ -87,11 +87,11 @@ namespace spotifyDB
                 if (conn != null && conn.State == ConnectionState.Open)
                 {
                     conn.Close();
-                    //  MessageBox.Show("Disconnected");
+                     MessageBox.Show("Disconnected");
                 }
                 else
                 {
-                    // MessageBox.Show("Connection is already closed.");
+                     MessageBox.Show("Connection is already closed.");
                 }
             }
             catch (Exception ex)
