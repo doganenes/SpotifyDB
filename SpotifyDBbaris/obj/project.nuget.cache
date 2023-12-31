@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sBtL2brjM/4Tr0ujOMkB4ASvKqt3qxzg2GCmYaxMSwKbhJCGJTa8+Tn3YV5DpLkGaDLYwkiW5cJLh7FVX4XzBA==",
+  "dgSpecHash": "n29fu8PGogTc2G2woM3cNvv/StK4NjUZUh+/6Ng9eWAyzjU8G9ItVNfBPrcNuB6NYvSlDjPPAXl/GwdUaGzxdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\casper\\Desktop\\3rd Grade Fall\\Database Management Systems\\project\\ödev hakkında foto\\SpotifyDB\\SpotifyDBbaris\\spotifyDB.csproj",
+  "projectFilePath": "C:\\Users\\casper\\Desktop\\3rd Grade Fall\\Database Management Systems\\project\\SpotifyDB\\SpotifyDBbaris\\spotifyDB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\casper\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
