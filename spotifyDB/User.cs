@@ -67,7 +67,7 @@ namespace spotifyDB
         private void disconnectBtn_Click(object sender, EventArgs e)
         {
             try
-            {   
+            {
                 if (conn != null && conn.State == ConnectionState.Open)
                 {
                     conn.Close();
@@ -137,8 +137,58 @@ namespace spotifyDB
 
         private void button6_Click(object sender, EventArgs e)
         {
+            FormSearchHistory searchHistory = new FormSearchHistory();
+            this.Hide();
+            searchHistory.Show();
+        }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FormComment comment = new FormComment();
+            this.Hide();
+            comment.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormDevices devices = new FormDevices();
+            this.Hide();
+            devices.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormFavouriteSong favouriteSong = new FormFavouriteSong();
+            this.Hide();
+            favouriteSong.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormFollowedUser followedUser = new FormFollowedUser();
+            this.Hide();
+            followedUser.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormPremiumMembership formPremiumMembership = new FormPremiumMembership();
+            this.Hide();
+            formPremiumMembership.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FormSong formSong = new FormSong();
+            this.Hide();
+            formSong.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FormSessionHistory sessionHistory = new FormSessionHistory();
+            this.Hide();
+            sessionHistory.Show();
         }
     }
 }
-

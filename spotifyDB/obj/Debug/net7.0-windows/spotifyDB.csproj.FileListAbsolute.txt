@@ -145,3 +145,4 @@ C:\Users\casper\Downloads\SpotifyDB_en__guncel\spotifyDB\obj\Debug\net7.0-window
 C:\Users\casper\Downloads\SpotifyDB_en__guncel\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.genruntimeconfig.cache
 C:\Users\casper\Downloads\SpotifyDB_en__guncel\spotifyDB\obj\Debug\net7.0-windows\ref\spotifyDB.dll
 C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\ödev hakkında foto\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.FormQuery.resources
+C:\Users\casper\Desktop\3rd Grade Fall\Database Management Systems\project\ödev hakkında foto\SpotifyDB\spotifyDB\obj\Debug\net7.0-windows\spotifyDB.Properties.Resources.resources

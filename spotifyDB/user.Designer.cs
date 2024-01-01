@@ -49,12 +49,14 @@
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // addBtn
             // 
             addBtn.FlatAppearance.BorderSize = 15;
-            addBtn.Location = new Point(146, 322);
+            addBtn.Location = new Point(146, 330);
             addBtn.Margin = new Padding(4);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(187, 38);
@@ -66,7 +68,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(9, 199);
+            label1.Location = new Point(9, 207);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(116, 28);
@@ -76,7 +78,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(20, 244);
+            label2.Location = new Point(20, 252);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(101, 28);
@@ -86,7 +88,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(9, 286);
+            label3.Location = new Point(9, 294);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(112, 28);
@@ -95,7 +97,7 @@
             // 
             // userName
             // 
-            userName.Location = new Point(146, 193);
+            userName.Location = new Point(146, 201);
             userName.Margin = new Padding(4);
             userName.Name = "userName";
             userName.Size = new Size(187, 34);
@@ -104,7 +106,7 @@
             // 
             // email
             // 
-            email.Location = new Point(146, 280);
+            email.Location = new Point(146, 288);
             email.Margin = new Padding(4);
             email.Name = "email";
             email.Size = new Size(187, 34);
@@ -113,7 +115,7 @@
             // 
             // password
             // 
-            password.Location = new Point(146, 238);
+            password.Location = new Point(146, 246);
             password.Margin = new Padding(4);
             password.Name = "password";
             password.Size = new Size(187, 34);
@@ -159,7 +161,7 @@
             // 
             // queryBtn
             // 
-            queryBtn.Location = new Point(146, 367);
+            queryBtn.Location = new Point(146, 375);
             queryBtn.Name = "queryBtn";
             queryBtn.Size = new Size(187, 38);
             queryBtn.TabIndex = 13;
@@ -171,7 +173,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(12, 23);
+            label4.Location = new Point(0, 104);
             label4.Name = "label4";
             label4.Size = new Size(171, 41);
             label4.TabIndex = 14;
@@ -186,6 +188,7 @@
             button1.TabIndex = 15;
             button1.Text = "Comment";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // button2
             // 
@@ -195,6 +198,7 @@
             button2.TabIndex = 16;
             button2.Text = "Devices";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -204,6 +208,7 @@
             button3.TabIndex = 17;
             button3.Text = "Favourite Song";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -213,6 +218,7 @@
             button4.TabIndex = 18;
             button4.Text = "Followed User";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -222,6 +228,7 @@
             button5.TabIndex = 19;
             button5.Text = "Premium Membership";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -241,6 +248,7 @@
             button7.TabIndex = 21;
             button7.Text = "Song";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -250,6 +258,17 @@
             button8.TabIndex = 22;
             button8.Text = "Session History";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.spotify;
+            pictureBox1.Location = new Point(9, 8);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(101, 89);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 23;
+            pictureBox1.TabStop = false;
             // 
             // User
             // 
@@ -257,6 +276,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(901, 592);
+            Controls.Add(pictureBox1);
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button6);
@@ -283,6 +303,7 @@
             Margin = new Padding(4);
             Name = "User";
             Load += User_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -310,5 +331,6 @@
         private Button button6;
         private Button button7;
         private Button button8;
+        private PictureBox pictureBox1;
     }
 }
