@@ -29,7 +29,7 @@ namespace spotifyDB
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
-                cmd.Parameters.AddWithValue("@searchname", searchName);
+                cmd.Parameters.AddWithValue("@searchname", searchname);
                 cmd.Parameters.AddWithValue("@date", date);
 
                 cmd.ExecuteNonQuery();

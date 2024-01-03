@@ -48,14 +48,16 @@ namespace spotifyDB
         private void addBtn_Click(object sender, EventArgs e)
         {
             string commenttext = commentText.Text;
+            int commentUser = Convert.ToInt32(userID.Text);
             DateTime date = dateTimePicker1.Value;
 
-            string insert = "INSERT INTO tblcomment (commenttext, commentdate) VALUES" +
-                            " (@commenttext, @date)";
+            string insert = "INSERT INTO tblcomment (commentuserid,commenttext, commentdate) VALUES" +
+                            " (@commentUser,@commenttext, @date)";
 
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
+                cmd.Parameters.AddWithValue("@commentUser", commentUser);
                 cmd.Parameters.AddWithValue("@commenttext", commenttext);
                 cmd.Parameters.AddWithValue("@date", date);
 
@@ -91,6 +93,16 @@ namespace spotifyDB
             User user = new User();
             this.Hide();
             user.Show();
+        }
+
+        private void userID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void commentText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

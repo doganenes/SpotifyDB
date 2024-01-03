@@ -36,11 +36,13 @@
             dateTimePicker1 = new DateTimePicker();
             label3 = new Label();
             button2 = new Button();
+            createdByUser = new TextBox();
+            userID = new Label();
             SuspendLayout();
             // 
             // playlistName
             // 
-            playlistName.Location = new Point(195, 133);
+            playlistName.Location = new Point(195, 100);
             playlistName.Name = "playlistName";
             playlistName.Size = new Size(251, 27);
             playlistName.TabIndex = 20;
@@ -69,7 +71,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(30, 133);
+            label1.Location = new Point(30, 100);
             label1.Name = "label1";
             label1.Size = new Size(143, 28);
             label1.TabIndex = 15;
@@ -114,12 +116,32 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // createdByUser
+            // 
+            createdByUser.Location = new Point(195, 140);
+            createdByUser.Name = "createdByUser";
+            createdByUser.Size = new Size(251, 27);
+            createdByUser.TabIndex = 25;
+            createdByUser.TextChanged += createdByUser_TextChanged;
+            // 
+            // userID
+            // 
+            userID.AutoSize = true;
+            userID.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            userID.Location = new Point(92, 140);
+            userID.Name = "userID";
+            userID.Size = new Size(81, 28);
+            userID.TabIndex = 24;
+            userID.Text = "User ID";
+            // 
             // FormPlaylist
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(800, 450);
+            Controls.Add(createdByUser);
+            Controls.Add(userID);
             Controls.Add(button2);
             Controls.Add(dateTimePicker1);
             Controls.Add(label3);
@@ -130,6 +152,7 @@
             Controls.Add(addBtn);
             Name = "FormPlaylist";
             Text = "FormPlaylist";
+            Load += FormPlaylist_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -144,5 +167,7 @@
         private DateTimePicker dateTimePicker1;
         private Label label3;
         private Button button2;
+        private TextBox createdByUser;
+        private Label userID;
     }
 }

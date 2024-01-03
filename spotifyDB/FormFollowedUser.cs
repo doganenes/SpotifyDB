@@ -20,13 +20,17 @@ namespace spotifyDB
 
         private void addBtn_Click(object sender, EventArgs e)
         {
+            int followeduser = Convert.ToInt32(followedUser.Text);
+            int followeruser = Convert.ToInt32(followerUser.Text);
             DateTime date = dateTimePicker1.Value;
 
-            string insert = "INSERT INTO tblfolloweduser (username, password, email, creationdate) VALUES" +
-                            " (@username, @pass, @usermail, @date)";
+            string insert = "INSERT INTO tblfolloweduser (followeduserid,followeruser,followstartdate) VALUES" +
+                            " (@followeduser,@followeruser,@date)";
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
+                cmd.Parameters.AddWithValue("@followeduser", followeduser);
+                cmd.Parameters.AddWithValue("@followeruser",followeruser);
                 cmd.Parameters.AddWithValue("@date", date);
 
                 cmd.ExecuteNonQuery();
@@ -71,7 +75,7 @@ namespace spotifyDB
                 }
                 else
                 {
-                   MessageBox.Show("Connection is already closed.");
+                    MessageBox.Show("Connection is already closed.");
                 }
             }
             catch (Exception ex)
@@ -86,6 +90,16 @@ namespace spotifyDB
             User user = new User();
             this.Hide();
             user.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormFollowedUser_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

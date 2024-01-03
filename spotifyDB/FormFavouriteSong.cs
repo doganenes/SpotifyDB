@@ -29,13 +29,17 @@ namespace spotifyDB
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime date = dateTimePicker1.Value;
+            int favouriteSong = Convert.ToInt32(songID.Text);
+            int userSong = Convert.ToInt32(userID.Text);
 
-            string insert = "INSERT INTO tblfavouritesong (likedate) VALUES" +
-                            " (@date)";
+            string insert = "INSERT INTO tblfavouritesong (favouritesongid, likedate, userid) VALUES" +
+                            " (@favouritesong, @date, @userSong)";
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
+                cmd.Parameters.AddWithValue("@favouriteSong", favouriteSong);
                 cmd.Parameters.AddWithValue("@date", date);
+                ; cmd.Parameters.AddWithValue("@userSong", userSong);
 
                 cmd.ExecuteNonQuery();
             }
@@ -94,6 +98,11 @@ namespace spotifyDB
             User user = new User();
             this.Hide();
             user.Show();
+        }
+
+        private void songID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -36,6 +36,8 @@
             label2 = new Label();
             followedUser = new TextBox();
             button2 = new Button();
+            followerUser = new TextBox();
+            label3 = new Label();
             SuspendLayout();
             // 
             // connectBtn
@@ -62,7 +64,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(104, 119);
+            label1.Location = new Point(105, 90);
             label1.Name = "label1";
             label1.Size = new Size(145, 28);
             label1.TabIndex = 7;
@@ -98,7 +100,7 @@
             // 
             // followedUser
             // 
-            followedUser.Location = new Point(255, 119);
+            followedUser.Location = new Point(256, 90);
             followedUser.Name = "followedUser";
             followedUser.Size = new Size(251, 27);
             followedUser.TabIndex = 13;
@@ -114,12 +116,32 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // followerUser
+            // 
+            followerUser.Location = new Point(256, 131);
+            followerUser.Name = "followerUser";
+            followerUser.Size = new Size(251, 27);
+            followerUser.TabIndex = 16;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(105, 130);
+            label3.Name = "label3";
+            label3.Size = new Size(141, 28);
+            label3.TabIndex = 15;
+            label3.Text = "Follower User";
+            label3.Click += label3_Click;
+            // 
             // FormFollowedUser
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(800, 450);
+            Controls.Add(followerUser);
+            Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(followedUser);
             Controls.Add(dateTimePicker1);
@@ -130,6 +152,7 @@
             Controls.Add(addBtn);
             Name = "FormFollowedUser";
             Text = "FormFollowedUser";
+            Load += FormFollowedUser_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -144,5 +167,7 @@
         private Label label2;
         private TextBox followedUser;
         private Button button2;
+        private TextBox followerUser;
+        private Label label3;
     }
 }

@@ -25,14 +25,16 @@ namespace spotifyDB
         private void addBtn_Click(object sender, EventArgs e)
         {
             string playlistname = playlistName.Text;
+            int createdUser = Convert.ToInt32(createdByUser.Text);
             DateTime date = dateTimePicker1.Value;
-            string insert = "INSERT INTO tblplaylist (playlistname, creationdate) VALUES" +
-            " (@playlistname, @date)";
+            string insert = "INSERT INTO tblplaylist (playlistname,createdbyuserid, creationdate) VALUES" +
+            " (@playlistname,@createdUser, @date)";
 
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
                 cmd.Parameters.AddWithValue("@playlistname", playlistname);
+                cmd.Parameters.AddWithValue("@createdUser", createdUser);
                 cmd.Parameters.AddWithValue("@date", date);
                 cmd.ExecuteNonQuery();
             }
@@ -91,6 +93,16 @@ namespace spotifyDB
             User user = new User();
             this.Hide();
             user.Show();
+        }
+
+        private void FormPlaylist_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createdByUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
