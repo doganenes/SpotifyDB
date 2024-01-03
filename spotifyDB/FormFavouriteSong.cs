@@ -13,7 +13,7 @@ namespace spotifyDB
             InitializeComponent();
         }
 
-        private string connString = "Server=localhost; Port=5432; Username=postgres; Password=1234; Database=spotify;";
+        private string connString = "Server=localhost; Port=5432; Username=postgres; Password=mitaka; Database=spotify;";
         private NpgsqlConnection conn;
 
         private void label1_Click(object sender, EventArgs e)
