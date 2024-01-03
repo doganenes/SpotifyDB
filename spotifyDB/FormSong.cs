@@ -13,7 +13,7 @@ namespace spotifyDB
             InitializeComponent();
         }
 
-        private string connString = "Server=localhost; Port=5432; Username=postgres; Password=mitaka; Database=spotify;";
+        private string connString = "Server=localhost; Port=5432; Username=postgres; Password=1234; Database=spotify;";
         private NpgsqlConnection conn;
 
 
@@ -35,7 +35,6 @@ namespace spotifyDB
                 cmd.Parameters.AddWithValue("@date", date);
                 cmd.Parameters.AddWithValue("@songtype", songtype);
                 cmd.Parameters.AddWithValue("@restcount", restcount);
-
                 cmd.ExecuteNonQuery();
             }
 

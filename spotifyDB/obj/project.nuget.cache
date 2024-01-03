@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "f9AjdTDiZCdoc2XYBFQj38LxG6BplIvUhgqly8g6zBqvLIH26ECa29QKaP6FwRQWuAbZUF8FqvBlbHQvWHKkfQ==",
+  "dgSpecHash": "gUk2QZ0XIwu9tS0ufW0Sag33z8JRRFg45uGCz7Op5V/v2HQ3F7eScSqQDnP2snLCoEJv6a3BF0ueIY9r6yCl/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc\\Desktop\\SpotifyDB\\spotifyDB\\spotifyDB.csproj",
+  "projectFilePath": "C:\\Users\\casper\\Desktop\\3rd Grade Fall\\Database Management Systems\\project\\SpotifyDB\\spotifyDB\\spotifyDB.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\npgsql\\8.0.1\\npgsql.8.0.1.nupkg.sha512"
+    "C:\\Users\\casper\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\npgsql\\8.0.1\\npgsql.8.0.1.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\casper\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }
