@@ -41,18 +41,19 @@
             label4 = new Label();
             restCount = new TextBox();
             label5 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // songName
             // 
-            songName.Location = new Point(198, 92);
+            songName.Location = new Point(198, 84);
             songName.Name = "songName";
             songName.Size = new Size(250, 27);
             songName.TabIndex = 54;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(198, 179);
+            dateTimePicker1.Location = new Point(198, 171);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
             dateTimePicker1.TabIndex = 53;
@@ -61,7 +62,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(45, 179);
+            label2.Location = new Point(45, 171);
             label2.Name = "label2";
             label2.Size = new Size(130, 28);
             label2.TabIndex = 52;
@@ -91,7 +92,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(54, 92);
+            label1.Location = new Point(54, 84);
             label1.Name = "label1";
             label1.Size = new Size(121, 28);
             label1.TabIndex = 49;
@@ -99,8 +100,8 @@
             // 
             // addBtn
             // 
-            addBtn.BackColor = Color.Lime;
-            addBtn.Location = new Point(198, 331);
+            addBtn.BackColor = Color.Silver;
+            addBtn.Location = new Point(198, 301);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(250, 49);
             addBtn.TabIndex = 48;
@@ -110,7 +111,7 @@
             // 
             // singer
             // 
-            singer.Location = new Point(198, 137);
+            singer.Location = new Point(198, 129);
             singer.Name = "singer";
             singer.Size = new Size(250, 27);
             singer.TabIndex = 56;
@@ -119,7 +120,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(103, 137);
+            label3.Location = new Point(103, 129);
             label3.Name = "label3";
             label3.Size = new Size(72, 28);
             label3.TabIndex = 55;
@@ -127,7 +128,7 @@
             // 
             // songType
             // 
-            songType.Location = new Point(198, 223);
+            songType.Location = new Point(198, 215);
             songType.Name = "songType";
             songType.Size = new Size(250, 27);
             songType.TabIndex = 58;
@@ -136,7 +137,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(71, 223);
+            label4.Location = new Point(71, 215);
             label4.Name = "label4";
             label4.Size = new Size(104, 28);
             label4.TabIndex = 57;
@@ -144,7 +145,7 @@
             // 
             // restCount
             // 
-            restCount.Location = new Point(198, 267);
+            restCount.Location = new Point(198, 259);
             restCount.Name = "restCount";
             restCount.Size = new Size(250, 27);
             restCount.TabIndex = 60;
@@ -153,17 +154,30 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(71, 267);
+            label5.Location = new Point(71, 259);
             label5.Name = "label5";
             label5.Size = new Size(109, 28);
             label5.TabIndex = 59;
             label5.Text = "RestCount";
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(198, 356);
+            button2.Name = "button2";
+            button2.Size = new Size(250, 49);
+            button2.TabIndex = 61;
+            button2.Text = "Main Form";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // FormSong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(restCount);
             Controls.Add(label5);
             Controls.Add(songType);
@@ -198,5 +212,6 @@
         private Label label4;
         private TextBox restCount;
         private Label label5;
+        private Button button2;
     }
 }

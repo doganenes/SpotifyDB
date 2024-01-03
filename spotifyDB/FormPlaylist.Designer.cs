@@ -35,11 +35,12 @@
             addBtn = new Button();
             dateTimePicker1 = new DateTimePicker();
             label3 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // playlistName
             // 
-            playlistName.Location = new Point(277, 162);
+            playlistName.Location = new Point(195, 133);
             playlistName.Name = "playlistName";
             playlistName.Size = new Size(251, 27);
             playlistName.TabIndex = 20;
@@ -68,7 +69,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(112, 162);
+            label1.Location = new Point(30, 133);
             label1.Name = "label1";
             label1.Size = new Size(143, 28);
             label1.TabIndex = 15;
@@ -77,7 +78,7 @@
             // addBtn
             // 
             addBtn.BackColor = Color.Lime;
-            addBtn.Location = new Point(278, 277);
+            addBtn.Location = new Point(196, 237);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(250, 49);
             addBtn.TabIndex = 14;
@@ -87,7 +88,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(278, 206);
+            dateTimePicker1.Location = new Point(196, 177);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
             dateTimePicker1.TabIndex = 22;
@@ -96,17 +97,30 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(112, 204);
+            label3.Location = new Point(30, 175);
             label3.Name = "label3";
             label3.Size = new Size(143, 28);
             label3.TabIndex = 21;
             label3.Text = "Creation Date";
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(196, 292);
+            button2.Name = "button2";
+            button2.Size = new Size(250, 49);
+            button2.TabIndex = 23;
+            button2.Text = "Main Form";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // FormPlaylist
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(dateTimePicker1);
             Controls.Add(label3);
             Controls.Add(playlistName);
@@ -129,5 +143,6 @@
         private Button addBtn;
         private DateTimePicker dateTimePicker1;
         private Label label3;
+        private Button button2;
     }
 }

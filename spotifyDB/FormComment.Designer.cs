@@ -35,6 +35,7 @@
             label2 = new Label();
             disconnectionBtn = new Button();
             addBtn = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -93,20 +94,33 @@
             // 
             // addBtn
             // 
-            addBtn.BackColor = Color.Lime;
-            addBtn.Location = new Point(226, 238);
+            addBtn.BackColor = Color.Silver;
+            addBtn.Location = new Point(226, 246);
             addBtn.Name = "addBtn";
-            addBtn.Size = new Size(250, 57);
+            addBtn.Size = new Size(250, 49);
             addBtn.TabIndex = 6;
             addBtn.Text = "Add Data";
             addBtn.UseVisualStyleBackColor = false;
             addBtn.Click += addBtn_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(226, 301);
+            button1.Name = "button1";
+            button1.Size = new Size(250, 51);
+            button1.TabIndex = 7;
+            button1.Text = "Main Form";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
+            // 
             // FormComment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(30, 216, 96);
+            ClientSize = new Size(807, 438);
+            Controls.Add(button1);
             Controls.Add(addBtn);
             Controls.Add(disconnectionBtn);
             Controls.Add(label2);
@@ -114,6 +128,7 @@
             Controls.Add(dateTimePicker1);
             Controls.Add(commentText);
             Controls.Add(label1);
+            ForeColor = SystemColors.ControlText;
             Name = "FormComment";
             Text = "FormComment";
             Load += FormComment_Load;
@@ -130,5 +145,6 @@
         private Label label2;
         private Button disconnectionBtn;
         private Button addBtn;
+        private Button button1;
     }
 }

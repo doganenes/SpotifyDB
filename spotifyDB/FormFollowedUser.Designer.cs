@@ -35,6 +35,7 @@
             dateTimePicker1 = new DateTimePicker();
             label2 = new Label();
             followedUser = new TextBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // connectBtn
@@ -69,8 +70,8 @@
             // 
             // addBtn
             // 
-            addBtn.BackColor = Color.Lime;
-            addBtn.Location = new Point(256, 228);
+            addBtn.BackColor = Color.Silver;
+            addBtn.Location = new Point(256, 213);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(250, 49);
             addBtn.TabIndex = 6;
@@ -102,11 +103,24 @@
             followedUser.Size = new Size(251, 27);
             followedUser.TabIndex = 13;
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(256, 268);
+            button2.Name = "button2";
+            button2.Size = new Size(250, 49);
+            button2.TabIndex = 14;
+            button2.Text = "Main Form";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // FormFollowedUser
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(followedUser);
             Controls.Add(dateTimePicker1);
             Controls.Add(label2);
@@ -129,5 +143,6 @@
         private DateTimePicker dateTimePicker1;
         private Label label2;
         private TextBox followedUser;
+        private Button button2;
     }
 }

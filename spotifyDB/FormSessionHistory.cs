@@ -21,7 +21,7 @@ namespace spotifyDB
             DateTime date = dateTimePicker1.Value;
 
             string insert = "INSERT INTO tblsessionhistory (sessiondate, operationstatus) VALUES" +
-                            " (@operationstatus, @date)";
+                            " (@date, @operationstatus)";
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
@@ -46,11 +46,11 @@ namespace spotifyDB
                 if (conn.State != ConnectionState.Open)
                 {
                     conn.Open();
-                    // MessageBox.Show("Connected");
+                    MessageBox.Show("Connected");
                 }
                 else
                 {
-                    // MessageBox.Show("Connection is already open.");
+                    MessageBox.Show("Connection is already open.");
                 }
             }
             catch (Exception ex)
@@ -66,11 +66,11 @@ namespace spotifyDB
                 if (conn != null && conn.State == ConnectionState.Open)
                 {
                     conn.Close();
-                    //  MessageBox.Show("Disconnected");
+                    MessageBox.Show("Disconnected");
                 }
                 else
                 {
-                    // MessageBox.Show("Connection is already closed.");
+                    MessageBox.Show("Connection is already closed.");
                 }
             }
             catch (Exception ex)
@@ -78,6 +78,13 @@ namespace spotifyDB
                 MessageBox.Show(ex.Message);
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            this.Hide();
+            user.Show();
         }
     }
 }

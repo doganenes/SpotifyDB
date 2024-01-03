@@ -20,18 +20,18 @@ namespace spotifyDB
         private void addBtn_Click(object sender, EventArgs e)
         {
             string songname = songName.Text;
-            string singerr = singer.Text;
+            string singerDB = singer.Text;
             DateTime date = dateTimePicker1.Value;
             string songtype = songType.Text;
             string restcount = restCount.Text;
 
             string insert = "INSERT INTO tblsong (songname, singer, releaseyear, songtype, restcount) VALUES" +
-                            " (@songname, @singerr, @date, @date,@songtype, @restcount)";
+                            " (@singerDB, @singerr, @date, @songtype, @restcount)";
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
                 cmd.Parameters.AddWithValue("@songname", songname);
-                cmd.Parameters.AddWithValue("@singerr", singer);
+                cmd.Parameters.AddWithValue("@singerDB", singer);
                 cmd.Parameters.AddWithValue("@date", date);
                 cmd.Parameters.AddWithValue("@songtype", songtype);
                 cmd.Parameters.AddWithValue("@restcount", restcount);
@@ -86,6 +86,13 @@ namespace spotifyDB
                 MessageBox.Show(ex.Message);
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            this.Hide();
+            user.Show();
         }
     }
 }

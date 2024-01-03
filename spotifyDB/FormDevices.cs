@@ -53,11 +53,11 @@ namespace spotifyDB
                 if (conn.State != ConnectionState.Open)
                 {
                     conn.Open();
-                    // MessageBox.Show("Connected");
+                    MessageBox.Show("Connected");
                 }
                 else
                 {
-                    // MessageBox.Show("Connection is already open.");
+                    MessageBox.Show("Connection is already open.");
                 }
             }
             catch (Exception ex)
@@ -66,29 +66,34 @@ namespace spotifyDB
             }
         }
 
-  
+
         private void disconnectBtn_Click_1(object sender, EventArgs e)
         {
 
-               try
+            try
+            {
+                if (conn != null && conn.State == ConnectionState.Open)
                 {
-                    if (conn != null && conn.State == ConnectionState.Open)
-                    {
-                        conn.Close();
-                        //  MessageBox.Show("Disconnected");
-                    }
-                    else
-                    {
-                        // MessageBox.Show("Connection is already closed.");
-                    }
+                    conn.Close();
+                    MessageBox.Show("Disconnected");
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
-
+                    MessageBox.Show("Connection is already closed.");
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
 
-        
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            this.Hide();
+            user.Show();
+        }
     }
 }

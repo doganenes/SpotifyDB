@@ -35,6 +35,7 @@
             label1 = new Label();
             addBtn = new Button();
             searchName = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // dateTimePicker1
@@ -86,7 +87,7 @@
             // 
             // addBtn
             // 
-            addBtn.BackColor = Color.Lime;
+            addBtn.BackColor = Color.Silver;
             addBtn.Location = new Point(193, 228);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(250, 49);
@@ -102,11 +103,24 @@
             searchName.Size = new Size(250, 27);
             searchName.TabIndex = 40;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.White;
+            button1.Location = new Point(193, 283);
+            button1.Name = "button1";
+            button1.Size = new Size(250, 49);
+            button1.TabIndex = 41;
+            button1.Text = "Main Form";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // FormSearchHistory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(30, 216, 96);
+            ClientSize = new Size(804, 450);
+            Controls.Add(button1);
             Controls.Add(searchName);
             Controls.Add(dateTimePicker1);
             Controls.Add(label2);
@@ -130,5 +144,6 @@
         private Label label1;
         private Button addBtn;
         private TextBox searchName;
+        private Button button1;
     }
 }

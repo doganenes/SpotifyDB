@@ -35,11 +35,12 @@
             label1 = new Label();
             addBtn = new Button();
             dateTimePicker2 = new DateTimePicker();
+            button2 = new Button();
             SuspendLayout();
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(159, 113);
+            dateTimePicker1.Location = new Point(203, 127);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
             dateTimePicker1.TabIndex = 31;
@@ -48,7 +49,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(38, 158);
+            label2.Location = new Point(82, 172);
             label2.Name = "label2";
             label2.Size = new Size(98, 28);
             label2.TabIndex = 28;
@@ -78,7 +79,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(26, 111);
+            label1.Location = new Point(70, 125);
             label1.Name = "label1";
             label1.Size = new Size(110, 28);
             label1.TabIndex = 25;
@@ -86,8 +87,8 @@
             // 
             // addBtn
             // 
-            addBtn.BackColor = Color.Lime;
-            addBtn.Location = new Point(159, 217);
+            addBtn.BackColor = Color.Silver;
+            addBtn.Location = new Point(203, 231);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(250, 49);
             addBtn.TabIndex = 24;
@@ -97,16 +98,29 @@
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(159, 160);
+            dateTimePicker2.Location = new Point(203, 174);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(250, 27);
             dateTimePicker2.TabIndex = 32;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(203, 286);
+            button2.Name = "button2";
+            button2.Size = new Size(250, 49);
+            button2.TabIndex = 33;
+            button2.Text = "Main Form";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // FormPremiumMembership
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(dateTimePicker2);
             Controls.Add(dateTimePicker1);
             Controls.Add(label2);
@@ -129,5 +143,6 @@
         private Label label1;
         private Button addBtn;
         private DateTimePicker dateTimePicker2;
+        private Button button2;
     }
 }

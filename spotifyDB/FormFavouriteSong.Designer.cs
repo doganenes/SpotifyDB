@@ -33,11 +33,12 @@
             dateTimePicker1 = new DateTimePicker();
             disconnectBtn = new Button();
             connectBtn = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // addBtn
             // 
-            addBtn.BackColor = Color.Lime;
+            addBtn.BackColor = Color.Silver;
             addBtn.Location = new Point(128, 167);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(250, 49);
@@ -84,11 +85,24 @@
             connectBtn.UseVisualStyleBackColor = true;
             connectBtn.Click += connectBtn_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(128, 222);
+            button1.Name = "button1";
+            button1.Size = new Size(250, 49);
+            button1.TabIndex = 6;
+            button1.Text = "Main Form";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
+            // 
             // FormFavouriteSong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(connectBtn);
             Controls.Add(disconnectBtn);
             Controls.Add(dateTimePicker1);
@@ -108,5 +122,6 @@
         private DateTimePicker dateTimePicker1;
         private Button disconnectBtn;
         private Button connectBtn;
+        private Button button1;
     }
 }

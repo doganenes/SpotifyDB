@@ -35,6 +35,7 @@
             disconnectBtn = new Button();
             label1 = new Label();
             addBtn = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // operationStatus
@@ -93,7 +94,7 @@
             // 
             // addBtn
             // 
-            addBtn.BackColor = Color.Lime;
+            addBtn.BackColor = Color.Silver;
             addBtn.Location = new Point(195, 227);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(250, 49);
@@ -102,11 +103,25 @@
             addBtn.UseVisualStyleBackColor = false;
             addBtn.Click += addBtn_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ButtonHighlight;
+            button1.ForeColor = SystemColors.ControlText;
+            button1.Location = new Point(195, 282);
+            button1.Name = "button1";
+            button1.Size = new Size(250, 49);
+            button1.TabIndex = 48;
+            button1.Text = "Main Form";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // FormSessionHistory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(operationStatus);
             Controls.Add(dateTimePicker1);
             Controls.Add(label2);
@@ -129,5 +144,6 @@
         private Button disconnectBtn;
         private Label label1;
         private Button addBtn;
+        private Button button1;
     }
 }

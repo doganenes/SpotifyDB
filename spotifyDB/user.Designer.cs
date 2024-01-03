@@ -265,7 +265,7 @@
             pictureBox1.Image = Properties.Resources.spotify;
             pictureBox1.Location = new Point(9, 8);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(101, 89);
+            pictureBox1.Size = new Size(101, 93);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 23;
             pictureBox1.TabStop = false;

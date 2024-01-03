@@ -83,5 +83,12 @@ namespace spotifyDB
 
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            this.Hide();
+            user.Show();
+        }
     }
 }
