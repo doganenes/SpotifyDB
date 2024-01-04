@@ -22,15 +22,17 @@ namespace spotifyDB
         {
             DateTime date1 = dateTimePicker1.Value;
             DateTime date2 = dateTimePicker1.Value;
+            int user = Convert.ToInt32(userID.Text);   
 
-            string insert = "INSERT INTO tblpremiummembership (startdate,enddate) VALUES" +
-                            " (@date1,@date2)";
+            string insert = "INSERT INTO tblpremiummembership (startdate,enddate,userid) VALUES" +
+                            " (@date1,@date2,@user)";
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
 
                 cmd.Parameters.AddWithValue("@date1", date1);
                 cmd.Parameters.AddWithValue("@date2", date2);
+                cmd.Parameters.AddWithValue("@user", user);
 
                 cmd.ExecuteNonQuery();
             }
@@ -50,11 +52,11 @@ namespace spotifyDB
                 if (conn.State != ConnectionState.Open)
                 {
                     conn.Open();
-                    // MessageBox.Show("Connected");
+                    MessageBox.Show("Connected");
                 }
                 else
                 {
-                    // MessageBox.Show("Connection is already open.");
+                    MessageBox.Show("Connection is already open.");
                 }
             }
             catch (Exception ex)
@@ -70,7 +72,7 @@ namespace spotifyDB
                 if (conn != null && conn.State == ConnectionState.Open)
                 {
                     conn.Close();
-                    //  MessageBox.Show("Disconnected");
+                    MessageBox.Show("Disconnected");
                 }
                 else
                 {
@@ -89,6 +91,11 @@ namespace spotifyDB
             User user = new User();
             this.Hide();
             user.Show();
+        }
+
+        private void userID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

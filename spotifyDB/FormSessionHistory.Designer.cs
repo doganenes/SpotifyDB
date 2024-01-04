@@ -36,6 +36,8 @@
             label1 = new Label();
             addBtn = new Button();
             button1 = new Button();
+            label3 = new Label();
+            userID = new TextBox();
             SuspendLayout();
             // 
             // operationStatus
@@ -115,12 +117,32 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(103, 80);
+            label3.Name = "label3";
+            label3.Size = new Size(81, 28);
+            label3.TabIndex = 49;
+            label3.Text = "User ID";
+            // 
+            // userID
+            // 
+            userID.Location = new Point(195, 84);
+            userID.Name = "userID";
+            userID.Size = new Size(250, 27);
+            userID.TabIndex = 50;
+            userID.TextChanged += userID_TextChanged;
+            // 
             // FormSessionHistory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(800, 450);
+            Controls.Add(userID);
+            Controls.Add(label3);
             Controls.Add(button1);
             Controls.Add(operationStatus);
             Controls.Add(dateTimePicker1);
@@ -145,5 +167,7 @@
         private Label label1;
         private Button addBtn;
         private Button button1;
+        private Label label3;
+        private TextBox userID;
     }
 }

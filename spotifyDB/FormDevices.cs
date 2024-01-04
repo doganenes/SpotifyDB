@@ -22,19 +22,20 @@ namespace spotifyDB
 
         private void addBtn_Click(object sender, EventArgs e)
         {
+            int deviceuser = Convert.ToInt32(userID.Text);  
             string devicename = deviceName.Text;
             DateTime date1 = dateTimePicker1.Value;
             DateTime date2 = dateTimePicker2.Value;
 
-            string insert = "INSERT INTO tbldevices (devicename, linkdate, lastplayeddate) VALUES" +
-                           " (@devicename, @date1, @date2)";
+            string insert = "INSERT INTO tbldevices (devicename, linkdate, lastplayeddate, deviceuserid) VALUES" +
+                           " (@devicename, @date1, @date2,@deviceuser)";
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
                 cmd.Parameters.AddWithValue("@devicename", devicename);
                 cmd.Parameters.AddWithValue("@date1", date1);
                 cmd.Parameters.AddWithValue("@date2", date2);
-
+                cmd.Parameters.AddWithValue("@deviceuser", deviceuser);
                 cmd.ExecuteNonQuery();
             }
 
@@ -94,6 +95,11 @@ namespace spotifyDB
             User user = new User();
             this.Hide();
             user.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

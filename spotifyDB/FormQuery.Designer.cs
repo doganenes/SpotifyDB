@@ -32,6 +32,7 @@
             queryBox = new TextBox();
             button1 = new Button();
             dataGridView1 = new DataGridView();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -39,7 +40,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(69, 76);
+            label1.Location = new Point(59, 65);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(108, 38);
@@ -49,7 +50,7 @@
             // 
             // queryBox
             // 
-            queryBox.Location = new Point(195, 80);
+            queryBox.Location = new Point(165, 69);
             queryBox.Margin = new Padding(4);
             queryBox.Name = "queryBox";
             queryBox.Size = new Size(683, 34);
@@ -60,10 +61,10 @@
             // 
             button1.BackColor = Color.DimGray;
             button1.ForeColor = Color.Snow;
-            button1.Location = new Point(896, 65);
+            button1.Location = new Point(856, 58);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
-            button1.Size = new Size(139, 57);
+            button1.Size = new Size(117, 57);
             button1.TabIndex = 2;
             button1.Text = "QUERY";
             button1.UseVisualStyleBackColor = false;
@@ -80,12 +81,24 @@
             dataGridView1.TabIndex = 3;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(980, 58);
+            button2.Name = "button2";
+            button2.Size = new Size(129, 57);
+            button2.TabIndex = 8;
+            button2.Text = "Main Form";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // FormQuery
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 216, 96);
             ClientSize = new Size(1143, 683);
+            Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(queryBox);
@@ -107,5 +120,6 @@
         private TextBox queryBox;
         private Button button1;
         private DataGridView dataGridView1;
+        private Button button2;
     }
 }

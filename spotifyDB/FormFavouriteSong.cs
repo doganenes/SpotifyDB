@@ -1,8 +1,6 @@
 ﻿using Npgsql;
 using System.Data;
 using System.Linq.Expressions;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace spotifyDB
 {
@@ -32,7 +30,7 @@ namespace spotifyDB
             int favouriteSong = Convert.ToInt32(songID.Text);
             int userSong = Convert.ToInt32(userID.Text);
 
-            string insert = "INSERT INTO tblfavouritesong (favouritesongid, likedate, userid) VALUES" +
+            string insert = "INSERT INTO tblfavouritesong (favouritesongid, likedate, favouritesonguserid) VALUES" +
                             " (@favouritesong, @date, @userSong)";
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))

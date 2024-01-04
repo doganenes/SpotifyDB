@@ -16,17 +16,18 @@ namespace spotifyDB
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-
+            int user = Convert.ToInt32(userID.Text);
             string operationstatus = operationStatus.Text;
             DateTime date = dateTimePicker1.Value;
 
-            string insert = "INSERT INTO tblsessionhistory (sessiondate, operationstatus) VALUES" +
-                            " (@date, @operationstatus)";
+            string insert = "INSERT INTO tblsessionhistory (sessiondate, operationstatus,sessionuserid) VALUES" +
+                            " (@date, @operationstatus,@user)";
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
             {
                 cmd.Parameters.AddWithValue("@operationstatus", operationstatus);
                 cmd.Parameters.AddWithValue("@date", date);
+                cmd.Parameters.AddWithValue("@user", user);
 
                 cmd.ExecuteNonQuery();
             }
@@ -85,6 +86,11 @@ namespace spotifyDB
             User user = new User();
             this.Hide();
             user.Show();
+        }
+
+        private void userID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
