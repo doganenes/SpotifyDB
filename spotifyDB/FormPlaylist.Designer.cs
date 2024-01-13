@@ -79,7 +79,7 @@
             // 
             // addBtn
             // 
-            addBtn.BackColor = Color.Lime;
+            addBtn.BackColor = Color.Silver;
             addBtn.Location = new Point(196, 237);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(250, 49);

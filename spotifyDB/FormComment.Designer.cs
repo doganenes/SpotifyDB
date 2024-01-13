@@ -88,7 +88,7 @@
             // addBtn
             // 
             addBtn.BackColor = Color.Silver;
-            addBtn.Location = new Point(226, 314);
+            addBtn.Location = new Point(226, 248);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(250, 49);
             addBtn.TabIndex = 6;
@@ -99,7 +99,7 @@
             // button1
             // 
             button1.BackColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(226, 369);
+            button1.Location = new Point(226, 303);
             button1.Name = "button1";
             button1.Size = new Size(250, 51);
             button1.TabIndex = 7;

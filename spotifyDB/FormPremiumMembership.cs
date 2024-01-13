@@ -24,7 +24,7 @@ namespace spotifyDB
             DateTime date2 = dateTimePicker1.Value;
             int user = Convert.ToInt32(userID.Text);   
 
-            string insert = "INSERT INTO tblpremiummembership (startdate,enddate,userid) VALUES" +
+            string insert = "INSERT INTO tblpremiummembership (startdate,enddate,premiummembershipuserid) VALUES" +
                             " (@date1,@date2,@user)";
 
             using (NpgsqlCommand cmd = new NpgsqlCommand(insert, conn))
@@ -76,7 +76,7 @@ namespace spotifyDB
                 }
                 else
                 {
-                    // MessageBox.Show("Connection is already closed.");
+                    MessageBox.Show("Connection is already closed.");
                 }
             }
             catch (Exception ex)
