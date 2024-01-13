@@ -120,6 +120,7 @@
             password.Name = "password";
             password.Size = new Size(187, 34);
             password.TabIndex = 7;
+            password.UseSystemPasswordChar = true;
             password.TextChanged += password_TextChanged;
             // 
             // connectBtn
