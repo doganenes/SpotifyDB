@@ -1,6 +1,5 @@
 # Spotify Database Design
-
-<img src="https://github.com/doganenes/SpotifyDB/assets/86846812/aca70b0c-b85f-4df1-bee3-1cb89f054341">
+![img1](https://github.com/doganenes/SpotifyDB/assets/86846812/aca70b0c-b85f-4df1-bee3-1cb89f054341)
 
 Design a database for the Spotify website. 
 - Identifying the necessary tables and created them on the E-R diagram. 
