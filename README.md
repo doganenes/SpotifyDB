@@ -16,3 +16,4 @@ The foreign keys were added.
 ![tblsong add data](https://github.com/doganenes/SpotifyDB/assets/86846812/f9102eff-2500-4b99-9b8b-b5bfdf2d34ec)
 ![tblsong query](https://github.com/doganenes/SpotifyDB/assets/86846812/a368f404-d68d-47aa-89f3-db978a8e5a47)
 ![query form](https://github.com/doganenes/SpotifyDB/assets/86846812/f6dc8f51-43f0-4b14-bdfe-2de17d13b573)
+![ERD](https://github.com/doganenes/SpotifyDB/assets/86846812/31de6b21-5317-428a-9d9b-c910bb21de7c)
