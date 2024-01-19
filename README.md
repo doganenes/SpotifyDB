@@ -11,8 +11,8 @@ The foreign keys were added.
 - With the form application, it can both add data to database and query the data.
 
 ![form](https://github.com/doganenes/SpotifyDB/assets/86846812/aca70b0c-b85f-4df1-bee3-1cb89f054341)
-![form connected](https://github.com/doganenes/SpotifyDB/assets/86846812/c932fe15-ea78-46f8-bb43-81831ce709fb)
-![tbldevices form](https://github.com/doganenes/SpotifyDB/assets/86846812/b378e6ab-33eb-4cfd-8791-8026a10b83fd)
+![connected](https://github.com/doganenes/SpotifyDB/assets/86846812/0d78280e-3bbd-4dc8-8854-5cad56e73b2c)
+![playlist form](https://github.com/doganenes/SpotifyDB/assets/86846812/666f5ece-46be-4908-8e1d-2346327f76f0)
 ![tblsong add data](https://github.com/doganenes/SpotifyDB/assets/86846812/f9102eff-2500-4b99-9b8b-b5bfdf2d34ec)
 ![tblsong query](https://github.com/doganenes/SpotifyDB/assets/86846812/a368f404-d68d-47aa-89f3-db978a8e5a47)
 ![query form](https://github.com/doganenes/SpotifyDB/assets/86846812/f6dc8f51-43f0-4b14-bdfe-2de17d13b573)
